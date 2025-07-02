@@ -1,0 +1,25 @@
+# === Dependencies ===
+**/node_modules/  # Ignores ALL node_modules (frontend + backend)
+
+# === Environment Secrets ===
+.env               # API keys, database passwords
+.env.local         # Local overrides
+.env*.local        # Variants like .env.development.local
+
+# === Build Outputs ===
+dist/              # Vite/React production build
+build/             # Alternative build folder
+.vite/             # Vite cache
+
+# === Backend-Specific ===
+*.log              # Log files
+uploads/           # User-uploaded files (if applicable)
+
+# === IDE/Editor ===
+.idea/             # JetBrains IDE
+.vscode/           # VS Code settings
+*.swp              # Vim swap files
+
+# === OS Junk ===
+.DS_Store          # macOS metadata
+Thumbs.db          # Windows thumbnail cache
